@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background: linear-gradient(to right, #4caf50, #717375);
+    padding: 1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff9800;
+  }
+  
+  /* Section Styling */
+  .solutions, .details {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .solution-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 2rem;
+    justify-items: center;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color:#ecf0f1;
+    padding: 1.5rem;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h3 {
+    color: #2c3e50;
+  }
+  
+  .card p {
+    color: #7f8c8d;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: linear-gradient(to right, #4caf50, #717375);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer form {
+    margin: 20px 0;
+  }
+  
+  footer input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  footer .cta-button {
+    padding: 10px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  footer .cta-button:hover {
+    background-color: #f57c00;
+  }
+  
+  footer .social-media {
+    margin-top: 20px;
+  }
+  
+  footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .solution-cards {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+    
+    .card {
+      width: 90%;
+    }
+  }
+  

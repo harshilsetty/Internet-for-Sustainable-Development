@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Nature's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #56ab2f, #474846);
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background: none;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            text-align: center;
+            animation: fadeIn 4s forwards;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Go to Home Button */
+        .cta-button {
+            background-color: #ff9800;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            margin-left: 50px;
+            transition: background 0.3s;
+            font-size: 1.2rem;
+            animation: slideIn 1 forwards;
+        }
+
+        .cta-button:hover {
+            background-color: rgb(78, 119, 59);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateX(-30px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .illustration {
+            width: 100px;
+            height: 100px;
+            background: url('path_to_your_illustration_image.png') no-repeat center center/contain;
+            animation: pulse 1.5s infinite;
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+        }
+
+        .three-d {
+            width: 200px;
+            height: 200px;
+            background: url('path_to_your_3d_object_image.png') no-repeat center center/contain;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            animation: rotate 5s infinite linear;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>Internet for Sustainable Development</header> -->
+    <section class="hero">
+        <h1>EXPLORE  THE FUTURE OF INTERNET FOR SUSTAINABLE DEVELOPMENT</h1>
+
+        <a href="home.html" class="cta-button">GO TO HOME</a>
+        <div class="illustration"></div>
+        <div class="three-d"></div>
+    </section>
+</body>
+</html>
